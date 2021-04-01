@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="ScriptEnhancement"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="2f4cd451-092a-477a-bb2d-80977643ff9a"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>
