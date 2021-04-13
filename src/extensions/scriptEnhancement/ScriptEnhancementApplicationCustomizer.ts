@@ -120,15 +120,25 @@ export default class ScriptEnhancementApplicationCustomizer
 
             if(item.ContentType0 == 'Script' && item.isActive){
 
-              let script = document.createElement('script');
-              script.innerText = item.Content;
-              document.getElementsByTagName('head')[0].appendChild(script);
+              let formattedTitle = item.Title.replace(/\s+/g, '-').toLowerCase();
+
+              if(!document.getElementById(formattedTitle)){
+                let script = document.createElement('script');
+                script.innerText = item.Content;
+                script.id = formattedTitle;
+                document.getElementsByTagName('head')[0].appendChild(script);
+              }
 
             } else if(item.ContentType0 == "Style" && item.isActive) {
 
-              let style = document.createElement('style');
-              style.innerText = item.Content;
-              document.getElementsByTagName('head')[0].appendChild(style);
+              let formattedTitle = item.Title.replace(/\s+/g, '-').toLowerCase();
+
+              if(!document.getElementById(formattedTitle)){
+                let style = document.createElement('style');
+                style.innerText = item.Content;
+                style.id = formattedTitle;
+                document.getElementsByTagName('head')[0].appendChild(style);
+              }
 
             }
 
