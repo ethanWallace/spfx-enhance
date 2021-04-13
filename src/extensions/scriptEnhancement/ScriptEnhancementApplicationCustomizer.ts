@@ -87,14 +87,28 @@ export default class ScriptEnhancementApplicationCustomizer
         "/_api/web/lists/GetByTitle('ScriptEnhancement')/Items",
         SPHttpClient.configurations.v1);
 
-        return await res.json();
+        let response = await res;
+
+        if(response.status == 404) {
+          return null;
+        } else {
+          return response.json();
+        }
+        
     } else {
       const res = await this.context.spHttpClient.get(
         this.context.pageContext.web.absoluteUrl +
         "/_api/web/lists/GetByTitle('ScriptEnhancement')/Items",
         SPHttpClient.configurations.v1);
 
-        return await res.json();
+        let response = await res;
+
+        if(response.status == 404) {
+          return null;
+        } else {
+          return response.json();
+        }
+
     }
   }
 
