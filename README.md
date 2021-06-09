@@ -19,7 +19,7 @@ Sites based in Hubs will require the list to be created in the Hub site.
 
 ## Prerequisites
 
-> Sharepoint List
+Sharepoint List
 A Sharepoint List with the following fields will be needed to be created in the target site or hub site.
 | ScriptEnhancement                     |
 | Name          | Field          | Extra |
