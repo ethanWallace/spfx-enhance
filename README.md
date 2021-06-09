@@ -41,10 +41,8 @@ A Sharepoint List with the following fields will be needed to be created in the 
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-  - **Update pageUrl in ./config.serve.json to your target page**
+  - **Update pageUrl in ./config/serve.json to your target page**
   - **gulp serve**
-
-> Include any additional steps as needed.
 
 
 ## References
