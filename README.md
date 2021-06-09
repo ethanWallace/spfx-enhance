@@ -21,7 +21,7 @@ Sites based in Hubs will require the list to be created in the Hub site.
 
 A Sharepoint List with the following fields will be needed to be created in the target site or hub site.
 
-| ScriptEnhancement                     |
+List name: ScriptEnhancement       
 | Name          | Field          | Extra |
 | ------------- | ------------- | ----- |
 | Title         | Single line of text |  |
